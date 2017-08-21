@@ -17,3 +17,4 @@ public class Task25 {
         System.out.format("%.4f", result);
     }
 }
+//

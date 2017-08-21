@@ -12,3 +12,4 @@ public class Task12 {
         System.out.printf("%.4f", result);
     }
 }
+//

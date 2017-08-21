@@ -15,3 +15,4 @@ public class Task18 {
         System.out.println(r);
     }
 }
+//
