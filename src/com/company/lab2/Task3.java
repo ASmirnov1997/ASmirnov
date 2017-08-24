@@ -7,7 +7,12 @@ public class Task3 {
         int edge;
         Scanner s = new Scanner(System.in);
         edge = s.nextInt();
-        int volume = (int)Math.pow(edge, 3);
-        System.out.println(volume);
+        if(edge <= 0) {
+            System.out.println("Значение edge должно быть положительным");
+        } else {
+            int volume = (int)Math.pow(edge, 3);
+            System.out.println(volume);
+        }
+
     }
 }

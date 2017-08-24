@@ -7,9 +7,14 @@ public class Task2 {
         int edge;
         Scanner s = new Scanner(System.in);
         edge = s.nextInt();
-        int area;
-        area = 6 * (int)Math.pow(edge, 2);
-        System.out.println(area);
+        if(edge <= 0) {
+            System.out.println("Значение edge должно быть положительным");
+        } else {
+            int area;
+            area = 6 * (int)Math.pow(edge, 2);
+            System.out.println(area);
+        }
+
     }
 
 }

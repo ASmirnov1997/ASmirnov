@@ -13,7 +13,7 @@ public class Task19 {
         if(initialVelocity < 0) {
             System.out.println("Начальная скорость должна быть неотрицательна");
         } else {
-            if(time < 0) {
+            if(time <= 0) {
                 System.out.println("Время должно быть положительным");
             } else {
                 double distance = (initialVelocity * time) + ((acceleration * Math.pow(time, 2)) / 2);

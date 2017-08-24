@@ -15,7 +15,7 @@ public class Task37 {
             System.out.println("Объём должен быть неотрицательным");
         } else {
             double volume = volume1 + volume2;
-            double temperature = ((temperature1 * volume1) + (temperature2 * volume2)) / (volume1 + volume2);
+            double temperature = (double)((temperature1 * volume1) + (temperature2 * volume2)) / (volume1 + volume2);
 
             System.out.format("%.4f", volume);
             System.out.println();

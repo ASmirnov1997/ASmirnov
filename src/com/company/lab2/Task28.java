@@ -11,12 +11,16 @@ public class Task28 {
         int c = s.nextInt();
         int x = s.nextInt();
 
-        double r = Math.pow(Math.sqrt(a * Math.pow(x, 2) + b * x + c), -1);
-
-        System.out.format("%.4f", r);
+        if((a * Math.pow(x, 2) + b * x + c) < 0) {
+            System.out.println("Подкоренное выражение должно быть неотрицательным");
+        } else {
+            if((a * Math.pow(x, 2) + b * x + c) == 0) {
+                System.out.println("Знаменатель не может быть равен нулю");
+            } else {
+                double r = 1 / Math.pow((a * Math.pow(x, 2) + b * x + c), 0.5);
+                System.out.format("%.4f", r);
+            }
+        }
     }
 }
 
-// Я не знаю, как вывести запись на экран типа когда знаменатель не должен быть равен нулю.
-// Только если самому сделать исключение...
-// Точно так же и с Not a number. Или есть ещё варианты?

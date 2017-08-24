@@ -13,7 +13,7 @@ public class Task16 {
         if(y < 0) {
             System.out.println("Значение y должно быть неотрицательным");
         } else {
-            if(x < 0 && y < 0) {
+            if(x + Math.sqrt(y) < 0) {
                 System.out.println("Подкоренное выражение должно быть неотрицательным"); //NaN
             } else {
                 double r = -5 * Math.sqrt(x + Math.sqrt(y));

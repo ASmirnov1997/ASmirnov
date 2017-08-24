@@ -17,7 +17,7 @@ public class Task26 {
             if(d == 0) {
                 System.out.println("Значение d должно быть не равно нулю");
             } else {
-                double r = ((a * d) + (b * c)) / (a * d); // Почему-то не выводит нужное, если ввести первые числа
+                double r = (double)((a * d) + (b * c)) / (a * d); // Почему-то не выводит нужное, если ввести первые числа
                 System.out.format("%.4f", r);
             }
         }

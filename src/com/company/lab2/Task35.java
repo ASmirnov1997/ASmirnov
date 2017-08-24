@@ -9,7 +9,7 @@ public class Task35 {
         int x1 = s.nextInt();
         int x2 = s.nextInt();
 
-        double result = Math.pow((Math.pow(x2, 2) + Math.pow(x1, 2)), 0.5);
+        double result = Math.sqrt((Math.pow(x2, 2) + Math.pow(x1, 2)));
 
         System.out.format("%.4f", result);
     }

@@ -7,7 +7,6 @@ public class Task9 {
         String a;
         Scanner s = new Scanner(System.in);
         a = s.nextLine();
-        System.out.println("SELECT first_name, group " +
-                "FROM students WHERE student_id = " + "\'" + a + "\'");
+        System.out.println("SELECT first_name, group FROM students WHERE student_id = " + "\'" + a + "\'");
     }
 }

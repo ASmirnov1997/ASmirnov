@@ -7,8 +7,9 @@ public class Task27 {
         Scanner s = new Scanner(System.in);
 
         int x = s.nextInt();
+        double gr = (x * Math.PI / 180);
 
-        double result = Math.sqrt(Math.cos(x) * Math.cos(x)); // Почему-то вычисления другие, не пойму... Формула та же.
+        double result = Math.sqrt(Math.cos(gr) * Math.cos(gr));
 
         System.out.format("%.4f", result);
 
