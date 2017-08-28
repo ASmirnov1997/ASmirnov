@@ -21,6 +21,7 @@ public class Task10 {
         if(y > 0) {
             System.out.format("%.4f", Math.pow(y, 2));
             System.out.print(";");
+
         } else {
             System.out.print(y);
             System.out.print(";");

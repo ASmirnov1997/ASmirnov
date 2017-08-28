@@ -12,6 +12,7 @@ public class Task3 {
             System.out.println((int)Math.sqrt(k));
         } else {
             System.out.println((int)Math.pow(k, 2));
+
         }
     }
 }

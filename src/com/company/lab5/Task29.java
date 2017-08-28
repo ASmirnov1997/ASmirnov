@@ -32,6 +32,7 @@ public class Task29 {
             System.out.println("точка внутри");
         } else {
             System.out.println("точка не внутри");
+
         }
 
     }

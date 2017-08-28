@@ -20,6 +20,7 @@ public class Task16 {
 
         if(x < z && y < z) {
             System.out.println(z);
+
         }
     }
 }

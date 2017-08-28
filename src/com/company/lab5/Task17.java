@@ -19,6 +19,7 @@ public class Task17 {
             System.out.println("M не делится нацело на P");
         } else {
             System.out.println(m / p);
+
         }
     }
 }

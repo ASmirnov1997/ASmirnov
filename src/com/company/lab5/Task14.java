@@ -20,6 +20,7 @@ public class Task14 {
 
         if(-3 < z && z < 5) {
             System.out.print(z + " ");
+
         }
     }
 }

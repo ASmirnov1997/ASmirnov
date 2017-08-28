@@ -21,6 +21,7 @@ public class Task30 {
             System.out.println("Точка принадлежит прямой");
         } else {
             System.out.println("Точка не принадлежит прямой");
+
         }
     }
 }

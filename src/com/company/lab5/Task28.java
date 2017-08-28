@@ -36,6 +36,7 @@ public class Task28 {
             System.out.println("Размещение возможно");
         } else {
             System.out.println("Размещение невозможно");
+
         }
     }
 }

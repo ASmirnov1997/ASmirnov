@@ -28,6 +28,7 @@ public class Task15 {
         if(a == b || b == c || a == c) {
             System.out.println("Треугольник является равнобедренным.");
         } else {
+
             System.out.println("Треугольник не является равнобедренным.");
         }
     }

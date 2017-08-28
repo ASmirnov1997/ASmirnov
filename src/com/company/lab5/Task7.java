@@ -17,6 +17,7 @@ public class Task7 {
         if(edge < 0) {
             System.out.println("Сторона квадрата должна быть положительна");
             return;
+
         }
 
         if(Math.PI * Math.pow(radius, 2) < Math.pow(edge, 2)) {

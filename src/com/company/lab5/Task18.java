@@ -20,8 +20,10 @@ public class Task18 {
 
         if(a % 10 == ((a / 100) % 10)) {
             System.out.println("Равно");
+
         } else {
             System.out.println("Не равно");
+
         }
     }
 }

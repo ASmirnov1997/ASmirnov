@@ -17,6 +17,7 @@ public class Task9 {
         if(ss < 0) {
             System.out.println("Площадь квадрата должна быть положительной");
             return;
+
         }
 
         if((2 * Math.sqrt(sc / Math.PI)) >= (Math.sqrt(ss))) {

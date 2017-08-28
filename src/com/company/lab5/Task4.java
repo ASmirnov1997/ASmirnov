@@ -12,6 +12,7 @@ public class Task4 {
             System.out.println(a * (-1));
         } else {
             System.out.println(a);
+
         }
     }
 }
