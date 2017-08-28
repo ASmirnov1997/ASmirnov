@@ -6,31 +6,29 @@ public class Task7 {
     public static void main(String[] args) {
         Scanner s = new Scanner(System.in);
 
-        int a = s.nextInt();
-        int b = s.nextInt();
-        int c = s.nextInt();
+        int radius = s.nextInt();
+        int edge = s.nextInt();
 
-        if(a == 0) {
-            System.out.println("Данное уравнение не является квадратным");
+        if(radius < 0) {
+            System.out.println("Радиус должен быть положительным");
             return;
         }
 
-
-        if((Math.pow(b, 2) - 4 * a * c) < 0) {
-            System.out.println("Вещественных корней уравнения " + a
-                    + "x^2+" + b + "x+" + c + "=0 нет");
+        if(edge < 0) {
+            System.out.println("Сторона квадрата должна быть положительна");
+            return;
         }
 
-        if((Math.pow(b, 2) - 4 * a * c) == 0) {
-            System.out.println("Уравнение " + a
-                    + "x^2+" + b + "x+" + c + "=0 имеет один корень");
+        if(Math.PI * Math.pow(radius, 2) < Math.pow(edge, 2)) {
+            System.out.print("Площадь квадрата ");
+            System.out.format("%.4f", Math.pow(edge, 2));
+            System.out.print(" больше площади круга ");
+            System.out.format("%.4f", Math.PI * Math.pow(radius, 2));
+        } else {
+            System.out.print("Площадь круга ");
+            System.out.format("%.4f", Math.PI * Math.pow(radius, 2));
+            System.out.print(" больше площади квадрата ");
+            System.out.format("%.4f", Math.pow(edge, 2));
         }
-
-        if((Math.pow(b, 2) - 4 * a * c) > 0) {
-            System.out.println("У уравнения " + a
-                    + "x^2+" + b + "x+" + c + "=0 два вещественных корня");
-        }
-
-
     }
 }
