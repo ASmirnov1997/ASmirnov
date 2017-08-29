@@ -11,28 +11,21 @@ public class Task10 {
         double z = s.nextDouble();
 
         if(x > 0) {
-            System.out.format("%.4f",Math.pow(x, 2));
-            System.out.print(";");
+            System.out.format("%.4f;",Math.pow(x, 2));
         } else {
-            System.out.print(x);
-            System.out.print(";");
+            System.out.print(x + ";");
         }
 
         if(y > 0) {
-            System.out.format("%.4f", Math.pow(y, 2));
-            System.out.print(";");
-
+            System.out.format("%.4f;", Math.pow(y, 2));
         } else {
-            System.out.print(y);
-            System.out.print(";");
+            System.out.print(y + ";");
         }
 
         if(z > 0) {
-            System.out.format("%.4f", Math.pow(z, 2));
-            System.out.print(";");
+            System.out.format("%.4f;", Math.pow(z, 2));
         } else {
-            System.out.print(z);
-            System.out.print(";");
+            System.out.print(z + ";");
         }
     }
 }

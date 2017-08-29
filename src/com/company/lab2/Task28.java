@@ -10,14 +10,15 @@ public class Task28 {
         int b = s.nextInt();
         int c = s.nextInt();
         int x = s.nextInt();
+        double root = a * Math.pow(x, 2) + b * x + c;
 
-        if((a * Math.pow(x, 2) + b * x + c) < 0) {
+        if(root < 0) {
             System.out.println("Подкоренное выражение должно быть неотрицательным");
         } else {
-            if((a * Math.pow(x, 2) + b * x + c) == 0) {
+            if(root == 0) {
                 System.out.println("Знаменатель не может быть равен нулю");
             } else {
-                double r = 1 / Math.pow((a * Math.pow(x, 2) + b * x + c), 0.5);
+                double r = 1 / Math.sqrt(root);
                 System.out.format("%.4f", r);
             }
         }

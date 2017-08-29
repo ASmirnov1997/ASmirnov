@@ -21,15 +21,9 @@ public class Task7 {
         }
 
         if(Math.PI * Math.pow(radius, 2) < Math.pow(edge, 2)) {
-            System.out.print("Площадь квадрата ");
-            System.out.format("%.4f", Math.pow(edge, 2));
-            System.out.print(" больше площади круга ");
-            System.out.format("%.4f", Math.PI * Math.pow(radius, 2));
+            System.out.format("Площадь квадрата " + "%.4f" + "больше площади круга " + "%.4f", Math.pow(edge, 2), Math.PI * Math.pow(radius, 2));
         } else {
-            System.out.print("Площадь круга ");
-            System.out.format("%.4f", Math.PI * Math.pow(radius, 2));
-            System.out.print(" больше площади квадрата ");
-            System.out.format("%.4f", Math.pow(edge, 2));
+            System.out.format("Площадь круга " + "%.4f" + "больше площади квадрата " + "%.4f", Math.PI * Math.pow(radius, 2), Math.pow(edge, 2));
         }
     }
 }

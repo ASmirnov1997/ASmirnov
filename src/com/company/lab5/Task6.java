@@ -19,10 +19,16 @@ public class Task6 {
             return;
         }
 
-        if((velocityInKmH * 1000) / 3600 < velocityInMS) {
-            System.out.println(velocityInMS + " м/с меньше " + velocityInKmH + " км/ч");
+        if(((velocityInKmH * 1000) / 3600) < velocityInMS) {
+            System.out.format("%.2f", velocityInKmH);
+            System.out.print(" км/ч меньше ");
+            System.out.format("%.2f", velocityInMS);
+            System.out.println(" м/с");
         } else {
-            System.out.println(velocityInKmH + " км/ч меньше " + velocityInMS + " м/с");
+            System.out.format("%.2f", velocityInMS);
+            System.out.print(" м/с меньше ");
+            System.out.format("%.2f", velocityInKmH);
+            System.out.println(" км/ч");
         }
     }
 }

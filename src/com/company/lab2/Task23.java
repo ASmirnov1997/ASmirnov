@@ -9,14 +9,19 @@ public class Task23 {
         int a = s.nextInt();
         int b = s.nextInt();
         int c = s.nextInt();
-
         double discriminant = Math.pow(b, 2) - 4 * a * c;
 
+        if(a == 0) {
+            System.out.println("Данное уравнение не является квадратным");
+            return;
+        }
+
         System.out.format("%.4f", discriminant);
+
+
+
+
+
     }
 }
 
-/* "Данное уравнение не является квадратным" (по зваданию). Какое именно условие должно быть, чтобы
-оно не являлось квадратным?
- */
-//

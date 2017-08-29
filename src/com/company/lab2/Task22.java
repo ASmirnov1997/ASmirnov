@@ -9,6 +9,10 @@ public class Task22 {
         int mass = s.nextInt();
         int alInGrad = s.nextInt();
 
+        if(alInGrad > 90) {
+            System.out.println(0);
+        }
+
         if(mass <= 0) {
             System.out.println("Масса должна быть положительной");
         } else {
