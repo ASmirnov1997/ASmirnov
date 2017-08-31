@@ -6,9 +6,9 @@ public class Task14 {
     public static void main(String[] args) {
         Scanner s = new Scanner(System.in);
 
-        int a = s.nextInt();
-        int b = s.nextInt();
-        int pr = 1;
+        long a = s.nextInt();
+        long b = s.nextInt();
+        long pr = 1;
 
         if(a <= b) {
             while(a <= b) {
@@ -23,7 +23,7 @@ public class Task14 {
                 b++;
             }
 
-            System.out.println(pr); // тест 5 - отрицательное значение. То есть если b < a, то непонятно как считается.
+
         }
     }
 }
