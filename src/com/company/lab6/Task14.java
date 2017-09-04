@@ -23,7 +23,7 @@ public class Task14 {
                 b++;
             }
 
-
+            System.out.println(pr);
         }
     }
 }

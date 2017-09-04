@@ -10,6 +10,11 @@ public class Task16 {
         int a = 1;
         double sum = 0;
 
+        if(n <= 0) {
+            System.out.println("Значение N должно быть положительным");
+            return;
+        }
+
         while(a <= n) {
             sum = sum + 1 / (double)a;
             a++;
