@@ -15,6 +15,7 @@ public class Task30 {
 
         if(xt < 0) {
             System.out.println("Координата X должна быть неотрицательной");
+            return;
         }
 
         if(xt >= xp1 && yt >= yp1 && xt <= xp2 && yt <= yp2) {
