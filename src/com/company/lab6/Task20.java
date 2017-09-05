@@ -2,28 +2,28 @@ package com.company.lab6;
 
 import java.util.Scanner;
 
-public class Task14 {
+public class Task20 {
     public static void main(String[] args) {
         Scanner s = new Scanner(System.in);
 
-        long a = s.nextInt();
-        long b = s.nextInt();
-        long pr = 1;
+        long a = s.nextLong();
+        long b = s.nextLong();
+        long sum = 0;
 
-        if(a <= b) {
+        if(a < b) {
             while(a <= b) {
-                pr = pr * a;
+                sum = sum + (long)Math.pow(a , 2);
                 a++;
             }
 
-            System.out.println(pr);
+            System.out.println(sum);
         } else {
             while(b <= a) {
-                pr = pr * b;
+                sum = sum + (long)Math.pow(b, 2);
                 b++;
             }
 
-            System.out.println(pr);
+            System.out.println(sum);
         }
     }
 }
