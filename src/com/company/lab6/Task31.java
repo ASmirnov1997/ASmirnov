@@ -8,15 +8,6 @@ public class Task31 {
 
         int w = s.nextInt();
         int a = 1;
-        int b = 1;
-        int c = 1;
-        int d = 1;
-        int e = 1;
-        int f = 1;
-        int g = 1;
-        int h = 1;
-        int k = 1;
-        int l = 1;
 
         if(w < 0 || w > 20) {
             System.out.println("Значение W должно быть в интервале [0, 20]");
@@ -33,94 +24,112 @@ public class Task31 {
             a++;
         }
 
-        while(b <= w) {
-            if(b == w) {
+        a = 1;
+
+        while(a <= w) {
+            if(a == w) {
                 System.out.println(1);
             } else {
                 System.out.print(1);
             }
 
-            b++;
+            a++;
         }
 
-        while(c <= w) {
-            if(c == w) {
+        a = 1;
+
+        while(a <= w) {
+            if(a == w) {
                 System.out.println(2);
             } else {
                 System.out.print(2);
             }
 
-            c++;
+            a++;
         }
 
-        while(d <= w) {
-            if(d == w) {
+        a = 1;
+
+        while(a <= w) {
+            if(a == w) {
                 System.out.println(3);
             } else {
                 System.out.print(3);
             }
 
-            d++;
+            a++;
         }
 
-        while(e <= w) {
-            if(e == w) {
+        a = 1;
+
+        while(a <= w) {
+            if(a == w) {
                 System.out.println(4);
             } else {
                 System.out.print(4);
             }
 
-            e++;
+            a++;
         }
 
-        while(f <= w) {
-            if(f == w) {
+        a = 1;
+
+        while(a <= w) {
+            if(a == w) {
                 System.out.println(5);
             } else {
                 System.out.print(5);
             }
 
-            f++;
+            a++;
         }
 
-        while(g <= w) {
-            if(g == w) {
+        a = 1;
+
+        while(a <= w) {
+            if(a == w) {
                 System.out.println(6);
             } else {
                 System.out.print(6);
             }
 
-            g++;
+            a++;
         }
 
-        while(h <= w) {
-            if(h == w) {
+        a = 1;
+
+        while(a <= w) {
+            if(a == w) {
                 System.out.println(7);
             } else {
                 System.out.print(7);
             }
 
-            h++;
+            a++;
         }
 
-        while(k <= w) {
-            if(k == w) {
+        a = 1;
+
+        while(a <= w) {
+            if(a == w) {
                 System.out.println(8);
             } else {
                 System.out.print(8);
             }
 
-            k++;
+            a++;
         }
 
-        while(l <= w) {
-            if(l == w) {
+        a = 1;
+
+        while(a <= w) {
+            if(a == w) {
                 System.out.println(9);
             } else {
                 System.out.print(9);
             }
 
-            l++;
+            a++;
         }
     }
 }

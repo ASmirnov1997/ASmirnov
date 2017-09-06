@@ -8,8 +8,26 @@ public class Task35 {
 
         String s = sc.next();
         int h = sc.nextInt();
-        int b;
-        int c;
+        int a;
+        int i = 1;
+
+        if(h < 0) {
+            System.out.println("Значение H должно быть неотрицательно");
+            return;
+        }
+
+        while(i <= h) {
+            a = 0;
+            while(a < i) {
+                System.out.print(s);
+                a++;
+            }
+            System.out.println();
+
+            i++;
+        }
+
+
 
 
 

@@ -24,14 +24,21 @@ public class Task32 {
 
         for(b = 0; b < h; b++) {
             for(a = 1; a <= w; a++) {
-                if(a == w) {
-                    System.out.println(s);
-                } else {
-                    System.out.print(s);
-                }
-
+                System.out.print(s);
             }
+            System.out.println();
         }
+
+//        for(b = 0; b < h; b++) {
+//            for(a = 1; a <= w; a++) {
+//                if(a == w) {
+//                    System.out.println(s);
+//                } else {
+//                    System.out.print(s);
+//                }
+//
+//            }
+//        }
 
 
 

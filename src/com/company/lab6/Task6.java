@@ -8,17 +8,20 @@ public class Task6 {
 
         int a = s.nextInt();
         int b = s.nextInt();
+        int p;
+        int q;
 
         if(a < b) {
-            while(a <= b) {
-                System.out.print(a + " ");
-                a++;
-            }
+            p = a;
+            q = b;
         } else {
-            while(b <= a) {
-                System.out.print(b + " ");
-                b++;
-            }
+           p = b;
+           q = a;
+        }
+
+        while(p <= q) {
+            System.out.print(p + " ");
+            p++;
         }
     }
 }

@@ -8,13 +8,7 @@ public class Task30 {
 
         int w = s.nextInt();
         int a = 1;
-        int b = 1;
-        int c = 1;
-        int d = 1;
-        int e = 1;
-        int f = 1;
-        int g = 1;
-        int h = 1;
+
 
         if(w < 0 || w > 20) {
             System.out.println("Значение W должно быть в интервале [0, 20]");
@@ -31,74 +25,88 @@ public class Task30 {
             a++;
         }
 
-        while(b <= w) {
-            if(b == w) {
+        a = 1;
+
+        while(a <= w) {
+            if(a == w) {
                 System.out.println("b");
             } else {
                 System.out.print("b");
             }
 
-            b++;
+            a++;
         }
 
-        while(c <= w) {
-            if(c == w) {
+        a = 1;
+
+        while(a <= w) {
+            if(a == w) {
                 System.out.println("c");
             } else {
                 System.out.print("c");
             }
 
-            c++;
+            a++;
         }
 
-        while(d <= w) {
-            if(d == w) {
+        a = 1;
+
+        while(a <= w) {
+            if(a == w) {
                 System.out.println("d");
             } else {
                 System.out.print("d");
             }
 
-            d++;
+            a++;
         }
 
-        while(e <= w) {
-            if(e == w) {
+        a = 1;
+
+        while(a <= w) {
+            if(a == w) {
                 System.out.println("e");
             } else {
                 System.out.print("e");
             }
 
-            e++;
+            a++;
         }
 
-        while(f <= w) {
-            if(f == w) {
+        a = 1;
+
+        while(a <= w) {
+            if(a == w) {
                 System.out.println("f");
             } else {
                 System.out.print("f");
             }
 
-            f++;
+            a++;
         }
 
-        while(g <= w) {
-            if(g == w) {
+        a = 1;
+
+        while(a <= w) {
+            if(a == w) {
                 System.out.println("g");
             } else {
                 System.out.print("g");
             }
 
-            g++;
+            a++;
         }
 
-        while(h <= w) {
-            if(h == w) {
+        a = 1;
+
+        while(a <= w) {
+            if(a == w) {
                 System.out.println("h");
             } else {
                 System.out.print("h");
             }
 
-            h++;
+            a++;
         }
 
 
