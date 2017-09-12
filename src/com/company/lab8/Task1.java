@@ -7,6 +7,7 @@ public class Task1 {
         Scanner s = new Scanner(System.in);
 
         int a = s.nextInt();
+        s.nextLine();
         String str = s.nextLine();
         String[] arr = str.split(";");
 

@@ -9,17 +9,20 @@ public class Task5 {
         String left = s.nextLine();
         String right = s.nextLine();
 
-        String arr1[] = left.split(" ");
-        String arr2[] = right.split(" ");
+        String[] arr1 = left.split(" ");
+        String[] arr2 = right.split(" ");
         int a = 0;
-        int pr;
 
-        if(arr1.length < arr2.length || arr2.length < arr1.length) {
+        if(arr1.length != arr2.length) {
             System.out.println("Размеры массивов должны быть одинаковы");
+            return;
         }
 
-//        while(a < arr1.length) {
-//            pr =
-//        }
+        while(a < arr1.length) {
+           int c = Integer.parseInt(arr1[a]) * Integer.parseInt(arr2[a]);
+           a++;
+            System.out.print(c + " ");
+        }
+
     }
 }
