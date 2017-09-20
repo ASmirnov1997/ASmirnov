@@ -19,5 +19,6 @@ public class Task2 {
         int result = str.length() - str.indexOf(a) - 1;
         System.out.println(result);
 
+
     }
 }
