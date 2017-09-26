@@ -4,34 +4,34 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
 
-/**
- * Created by pro-27 on 20.09.2017.
- */
-public class Task1 {
+public class Task3 {
     public static void main(String[] args) {
         Scanner s = new Scanner(System.in);
-        String filename = "res/files/task6175/test" + s.nextInt() + ".txt";
-        File file = new File(filename);
 
-        if(!file.exists()) { // проверка существования
-            System.out.println("Файл " + file.getAbsolutePath() + " не существует");
+        String filename = "res/files/task4954/test" + s.nextInt() + ".txt";
+        File file = new File(filename);
+        s.nextLine();
+        String c = s.nextLine();
+
+
+        if(!file.exists()) {
+            System.out.println("Файл не существует");
             return;
         }
 
         try {
             Scanner fileReader = new Scanner(file);
-
+            int count = 0;
             while(fileReader.hasNext()) {
-                String line  = fileReader.nextLine();
-                System.out.print(line);
-                System.out.print(", ");
+                String a = fileReader.nextLine();
+                if(a.contains(c)) {
+                    count++;
+                }
             }
 
-
+            System.out.println(count);
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
-
-
     }
 }

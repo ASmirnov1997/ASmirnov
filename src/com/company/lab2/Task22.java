@@ -11,6 +11,7 @@ public class Task22 {
 
         if(alInGrad > 90) {
             System.out.println(0);
+            return;
         }
 
         if(mass <= 0) {

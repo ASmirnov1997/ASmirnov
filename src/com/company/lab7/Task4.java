@@ -19,11 +19,12 @@ public class Task4 {
 
         int f = 0;
         int i;
+        int count = 0;
         i = str.indexOf(a, f);
         while(i >= 0) {
-            System.out.print(i + " ");
             f = i + 1;
             i = str.indexOf(a, f);
+            count++;
         }
     }
 }
