@@ -3,6 +3,8 @@ package com.company.lab9;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public class Task9 {
     public static void main(String[] args) {
@@ -22,11 +24,16 @@ public class Task9 {
 
             while(fileReader.hasNext()) {
                 String string = fileReader.nextLine();
-                int a = string.indexOf(dog);
-                System.out.println(string.substring(0, a));
+                Pattern pattern = Pattern.compile("^([0-9a-zA-Z_.]+)@([a-z.]*)\\.([a-z.]*)$");
+                Matcher matcher = pattern.matcher(string);
+
+                if (matcher.find()) {
+                    System.out.println(matcher.group(1));
+                } else {
+                    System.out.println("Некорректный почтовый адрес");
+                }
             }
 
-            //Не знаю, как вывести некорректный почтовый адрес, какое должно быть условие
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
